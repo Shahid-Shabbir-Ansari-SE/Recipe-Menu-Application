@@ -1,0 +1,168 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@500&family=Yeseva+One&display=swap");
+
+/* Reset default margin and padding for the entire page */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background image settings */
+.mainimage {
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  margin: 0;
+  top: 0;
+  right: 0;
+  animation: fade 5s infinite ease-in-out;
+}
+
+/* Keyframe animation for fading background image */
+@keyframes fade {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  font-family: Pacifico;
+  font-size: 52px;
+  color: #e21b70;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content area */
+main {
+  display: flex;
+}
+
+/* Styling for the "Add Recipe" section */
+.addRecipediv {
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+}
+
+.addRecipediv h1 {
+  font-family: Yeseva One;
+  font-size: 32px;
+  text-decoration: underline;
+  margin: 0px 0px 40px;
+}
+
+.addRecipediv input {
+  height: 30px;
+  width: 350px;
+  border: 2px solid #e21b70;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.addRecipediv input:focus {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #e21b70;
+}
+
+.addRecipediv input::placeholder {
+  font-family: Pacifico;
+  font-size: 14px;
+  color: grey;
+  opacity: 1;
+}
+
+.addRecipediv input:focus::placeholder,
+.addRecipediv input:not(:placeholder-shown)::placeholder {
+  opacity: 0;
+}
+
+.addRecipediv button {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #e21b70;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+.addRecipediv button:hover {
+  background-color: black;
+  cursor: pointer;
+  background-color: white;
+  color: #e21b70;
+  border: 2px solid #e21b70;
+}
+
+/* Styling for the "Display Recipe" section */
+.displayRecipediv {
+  display: grid;
+  gap: 20px;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+.displayRecipediv h1 {
+  font-family: Yeseva One;
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.displayRecipediv p {
+  font-family: Poppins;
+  font-size: 20px;
+}
+
+.displayRecipediv img {
+  width: 250px;
+  object-fit: cover;
+  height: 250px;
+  border: 2px solid #e21b70;
+  border-radius: 20px;
+}
+
+.displayRecipediv button {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 8px auto;
+  align-items: center;
+  background-color: #e21b70;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-family: Poppins;
+  font-size: 14px;
+}
+
+.displayRecipediv button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #e21b70;
+  border: 2px solid #e21b70;
+}
