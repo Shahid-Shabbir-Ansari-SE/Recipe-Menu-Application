@@ -2,6 +2,10 @@
 
 The Recipe Menu Web Application is a simple interactive web page that allows users to manage and display a collection of recipes. Users can add new recipes, edit existing recipes, and delete recipes. The application provides a visually appealing interface for users to interact with their recipes.
 
+##Deployed Site Link
+
+https://recipemenuapp.netlify.app/
+
 ## Features
 
 - Display a background image with a fading animation.
