@@ -166,3 +166,30 @@ main {
   color: #e21b70;
   border: 2px solid #e21b70;
 }
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 480px) {
+  .mainimage {
+    height: 100%;
+  }
+  main{
+    display: grid;
+  }
+
+  header h1 {
+    font-size: 36px;
+  }
+
+  .addRecipediv,
+  .displayRecipediv {
+    width: auto;
+  }
+
+  .addRecipediv input {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+
+  }
+
